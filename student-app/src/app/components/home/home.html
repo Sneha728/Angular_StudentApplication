@@ -1,0 +1,28 @@
+<div>
+  <h2>All Students</h2>
+
+  <div *ngIf="students.length === 0">
+    No students found. Click Add Student on left to add.
+  </div>
+
+  <table *ngIf="students.length > 0" class="students-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Gender</th>
+        <th>Hobby</th>
+        <th>Favourite Subject</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of students">
+        <td>{{ s.name }}</td>
+        <td>{{ s.class }}</td>
+        <td>{{ s.gender }}</td>
+        <td>{{ s.hasHobby ? (s.hobby || 'No hobby') : 'No hobby' }}</td>
+        <td>{{ s.favouriteSubject || '—' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

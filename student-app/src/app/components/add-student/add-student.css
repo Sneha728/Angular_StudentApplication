@@ -1,0 +1,10 @@
+.form-card { max-width: 600px; background: #fff; padding: 16px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.form-row { margin-bottom: 12px; display: flex; flex-direction: column; }
+label { font-weight: 600; margin-bottom: 6px; }
+input[type="text"], input[type="email"], select, input { padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px; }
+.error { color: #b91c1c; margin-top: 6px; font-size: 13px; }
+.required { color: #b91c1c; }
+.form-actions { margin-top: 16px; }
+button { padding: 8px 12px; margin-right: 8px; border-radius: 4px; border: none; cursor: pointer; }
+button[type="submit"] { background: #0b5cff; color: white; }
+.class-message { margin-top: 6px; font-style: italic; color: #065f46; }
